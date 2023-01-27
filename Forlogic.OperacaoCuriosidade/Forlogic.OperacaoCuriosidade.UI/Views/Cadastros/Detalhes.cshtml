@@ -1,0 +1,69 @@
+﻿@model Forlogic.OperacaoCuriosidade.Domain.Entities.Cadastro
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+<hr />
+
+<div class="container text-start">
+    <div class="row mt-3">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Nome): </strong>
+            @Html.DisplayFor(model => model.Nome)
+        </div>
+
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Idade): </strong>
+            @Html.DisplayFor(model => model.Idade)
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Email): </strong>
+            @Html.DisplayFor(model => model.Email)
+        </div>
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.DataCadastro): </strong>
+            @Html.DisplayFor(model => model.DataCadastro)
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Endereco): </strong>
+            @Html.DisplayFor(model => model.Endereco)
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Outros): </strong>
+            @Html.DisplayFor(model => model.Outros)
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Interesses): </strong>
+            @Html.DisplayFor(model => model.Interesses)
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Sentimentos): </strong>
+            @Html.DisplayFor(model => model.Sentimentos)
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <strong>@Html.DisplayNameFor(model => model.Valores): </strong>
+            @Html.DisplayFor(model => model.Valores)
+        </div>
+    </div>
+</div>
+
+<p>
+    <a class="btn btn-sm btn-outline-success mt-3" href="@Url.Action("AddEdit", new {model=Model.TipoDeCadastroId})"><i class="fas fa-edit"></i> Editar</a>
+    <a class="btn btn-sm btn-outline-dark mt-3" href="@Url.Action("Index")"><i class="fas fa-arrow-alt-circle-left"></i> Voltar</a>
+</p>

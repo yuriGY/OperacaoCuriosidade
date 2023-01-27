@@ -1,0 +1,6 @@
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Domain\bin\Debug\Forlogic.OperacaoCuriosidade.Domain.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Domain\bin\Debug\Forlogic.OperacaoCuriosidade.Domain.pdb
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Domain\obj\Debug\Forlogic.OperacaoCuriosidade.Domain.csproj.AssemblyReference.cache
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Domain\obj\Debug\Forlogic.OperacaoCuriosidade.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Domain\obj\Debug\Forlogic.OperacaoCuriosidade.Domain.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Domain\obj\Debug\Forlogic.OperacaoCuriosidade.Domain.pdb

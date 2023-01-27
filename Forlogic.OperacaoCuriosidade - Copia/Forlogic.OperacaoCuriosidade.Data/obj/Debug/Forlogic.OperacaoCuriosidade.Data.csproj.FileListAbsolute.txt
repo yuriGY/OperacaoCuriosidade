@@ -1,0 +1,14 @@
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\Forlogic.OperacaoCuriosidade.Data.dll.config
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\Forlogic.OperacaoCuriosidade.Data.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\Forlogic.OperacaoCuriosidade.Data.pdb
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\EntityFramework.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\Forlogic.OperacaoCuriosidade.Domain.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\Forlogic.OperacaoCuriosidade.Domain.pdb
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\EntityFramework.xml
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\obj\Debug\Forlogic.OperacaoCuriosidade.Data.csproj.AssemblyReference.cache
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\obj\Debug\Forlogic.OperacaoCuriosidade.Data.csproj.CoreCompileInputs.cache
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\obj\Debug\Forlogic.OperacaoCuriosidade.Data.csproj.CopyComplete
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\obj\Debug\Forlogic.OperacaoCuriosidade.Data.dll
+C:\Users\Yuri\source\repos\yuriGY\OperacaoCuriosidade\Forlogic.OperacaoCuriosidade\Forlogic.OperacaoCuriosidade.Data\obj\Debug\Forlogic.OperacaoCuriosidade.Data.pdb

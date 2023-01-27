@@ -1,0 +1,39 @@
+@using Forlogic.OperacaoCuriosidade.UI.ViewModels.Cadastros.Index
+
+@{
+    ViewBag.Title = "Emails";
+}
+
+<h2>Emails</h2>
+<a id="printPDF" class="btn btn-outline-dark float-end">Imprimir</a>
+<table id="tabelaEmail" class="table table-hover table-responsive-sm p-3">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Login</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CadastroIndexVM cadastro in Model)
+        {
+            <tr id="cadastro-@cadastro.Id">
+                <td>@cadastro.Nome</td>
+                <td>@cadastro.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script>
+        $("#printPDF").click(function () {
+            var element = document.getElementById('tabelaEmail');
+            html2pdf().from(element).set({
+                margin: [30, 10, 5, 10],
+                pagebreak: { avoid: 'tr' },
+                jsPDF: { orientation: 'landscape', unit: 'pt', format: 'letter', compressPDF: true }
+            }).save()
+        });
+    </script>    
+}

@@ -1,0 +1,106 @@
+﻿@model Forlogic.OperacaoCuriosidade.Domain.Entities.Cadastro
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Cadastro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCadastro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Idade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outros)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interesses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interesses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sentimentos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sentimentos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Valores)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Valores)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeCadastroId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeCadastroId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

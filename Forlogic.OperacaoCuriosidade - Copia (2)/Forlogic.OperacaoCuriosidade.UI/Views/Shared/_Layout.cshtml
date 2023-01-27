@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/all.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <title>Operacao Curiosidade | @ViewBag.Title</title>
+</head>
+<body>
+    @Html.Partial("_menu")
+
+    <div class="container mt-3">
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Projeto ASP.NET MVC desenvolvido por Yuri Yoshida</span>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery-3.6.1.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("scripts", false)
+</body>
+</html>
+

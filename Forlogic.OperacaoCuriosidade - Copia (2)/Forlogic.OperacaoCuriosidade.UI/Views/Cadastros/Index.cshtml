@@ -1,0 +1,90 @@
+@using Forlogic.OperacaoCuriosidade.UI.ViewModels.Cadastros.Index
+
+@{
+    ViewBag.Title = "Listagem de Cadastros";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="mb-3">
+    <a class="btn btn-outline-dark mt-3 float-end" href="@Url.Action("AddEdit")">Novo Cadastro</a>
+</div>
+<table class="table table-striped table-hover table-responsive-sm p-3">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Login</th>
+            <th>Idade</th>
+            <th>Tipo</th>
+            <th>Data do Cadastro</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CadastroIndexVM cadastro in Model)
+        {
+            <tr id="cadastro-@cadastro.Id">
+                <td>@cadastro.Nome</td>
+                <td>@cadastro.Login</td>
+                <td>@cadastro.Idade</td>
+                <td>@cadastro.Tipo</td>
+                <td>@cadastro.DataCadastro</td>
+                <td>
+                    <a class="btn btn-sm btn-outline-info" href="#"><i class="fas fa-info"></i> Info</a>
+                    <a class="btn btn-sm btn-outline-success" href="@Url.Action("AddEdit", new {id=cadastro.Id})"><i class="fas fa-edit"></i> Editar</a>
+                    <button class="btn btn-sm btn-outline-danger" onclick="DelCad(@cadastro.Id, '@cadastro.Nome')"><i class="fas fa-trash"></i> Excluir</button>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div data-id="0" class="modal" id="delModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Excluir Cadastro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Tem certeza que quer excluir o cadastro <strong><span id="nomeCadastroModal"></span></strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button onclick="ConfirmDelCad()" type="button" class="btn btn-primary">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function DelCad(id, nome) {
+        $('#nomeCadastroModal').text(nome)
+        $('#delModal').data('id', id).modal('show')
+    }
+
+    function ConfirmDelCad() {
+        let id = $('#delModal').data('id')
+        let xhr = new XMLHttpRequest();
+        const url = `/Cadastros/DelCad/${id}`
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 404) {
+                toastr.error('Cadastro não localizado!', 'Operação Curiosidade')
+            }
+
+            if (this.readyState === 4 && this.status === 200) {
+                let tr = document.querySelector(`#cadastro-${id}`)
+                if (tr !== null) {
+                    tr.remove()
+                }
+                $('#delModal').data('id', '0').modal('hide')
+                toastr.success('Cadastro excluído com sucesso!', 'Operação Curiosidade')
+            }
+        }
+
+        xhr.open('get', url)
+        xhr.send()
+    }
+</script>
